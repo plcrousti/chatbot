@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Product-Live Chatbot</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- Style -->
+    <style>
+        body {
+            color: #212121;
+            font-size: 18px;
+        }
+        #chat {
+            padding: 20px;
+            display: none;
+        }
+        #chat ul {
+            padding: 0;
+            list-style-type: none;
+            margin-bottom: 0;
+        }
+        #chat .chatbot {
+            font-weight: bold;
+            padding-top: 15px;
+            /*color: #cfd2da;*/
+        }
+        #chat .user-question {
+            font-weight: normal;
+            cursor: pointer;
+            /*color: #1997c6;*/
+        }
+        #chat .user-question:hover {
+            /*color: white;*/
+            text-decoration: underline;
+        }
+        #chat .user-response {
+            font-weight: normal;
+            /*color: #1997c6;*/
+            cursor: pointer;
+        }
+        #chat .solution {
+            padding-top: 15px;
+            color: #1bc98e;
+        }
+        #chat .bug {
+            padding-top: 15px;
+            color: #e64759;
+        }
+        #chat .answer {
+            /*color: #cfd2da;*/
+        }
+        #chat p {
+            margin-bottom: 0;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="chat">
+        <ul><li>J'ai un problème
+            <ul><li>Est-ce que vous utilisez Google Chrome comme navigateur?
+                <ul><li>Oui
+                    <ul><li>Est-ce que votre navigateur est à&nbsp;jour?
+                        <ul><li>Oui
+                            <ul><li>Est-ce que le zoom d'affichage du navigateur est à&nbsp;100%?
+                                <ul><li>Oui
+                                    <ul><li>Est-ce que tous les utilisateurs rencontrent le même problème?
+                                        <ul><li>Oui
+                                            <ul><li>Quel type de problème rencontrez-vous?
+                                                <ul><li>Problème de connexion
+
+                                                </li>
+                                                    <li>Problème d'invitation
+
+                                                    </li>
+                                                    <li>Problème d'affichage
+
+                                                    </li>
+                                                    <li>Problème d'export
+                                                        <ul><li>Quel est le problème avec l'export?
+                                                            <ul><li>L'export est toujours en cours
+                                                                <ul><li>Est-ce que d'autres utilisateurs ont également lancé des exports?
+                                                                    <ul><li>Oui
+
+                                                                    </li>
+                                                                        <li>Non
+
+                                                                        </li>
+                                                                        <li>Je ne sais pas
+
+                                                                        </li>
+
+                                                                    </ul>
+                                                                </li>
+
+                                                                </ul>
+                                                            </li>
+                                                                <li>L'export est terminé en erreur
+
+                                                                </li>
+                                                                <li>L'export est terminé, mais le fichier qui est généré ne correspond pas à&nbsp;ce qui est attendu
+
+                                                                </li>
+
+                                                            </ul>
+                                                        </li>
+
+                                                        </ul>
+                                                    </li>
+                                                    <li>Problème sur mes données
+
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+
+                                            </ul>
+                                        </li>
+                                            <li>Non
+                                                <ul><li>Est-ce que vous êtes sur le même réseau que vos collaborateurs?
+                                                    <ul><li>Oui
+                                                        <ul><li><a href="#ID_1442874269" target="_blank"><span class="l">~</span>&nbsp;&nbsp;
+                                                        </a>
+
+                                                        </li>
+
+                                                        </ul>
+                                                    </li>
+                                                        <li>Non
+                                                            <ul><li>
+                                                                <p>
+                                                                    <b>Solution</b>
+                                                                </p>
+                                                                <p>
+                                                                    Le problème est très certainement lié à votre poste de travail. Demandez à votre administrateur réseau de vous configurer le même accès au réseau que pour les utilisateurs qui arrivent à se connecter. Product-Live ne pourra pas vous aider si vous n'êtes pas sur le même réseau.
+                                                                </p>
+
+                                                            </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>Je ne sais pas
+                                                            <ul><li>
+                                                                <p>
+                                                                    <b>Solution</b>
+                                                                </p>
+                                                                <p>
+                                                                    Le problème est très certainement lié à votre poste de travail. Demandez à votre administrateur réseau de vous configurer le même accès au réseau que pour les utilisateurs qui arrivent à se connecter. Product-Live ne pourra pas vous aider si vous n'êtes pas sur le même réseau.
+                                                                </p>
+
+                                                            </li>
+                                                            </ul>
+                                                        </li>
+
+                                                    </ul>
+                                                </li>
+
+                                                </ul>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+                                    </ul>
+                                </li>
+                                    <li>Non
+                                        <ul><li>
+                                            <p>
+                                                <b>Solution</b>
+                                            </p>
+                                            <p>
+                                                Pour mettre le zoom à 100% cliquez simultanément sur Ctrl + 0, ou cliquez dans votre barre de recherche sur le zoom et cliquez sur réinitialiser. Enfin rafraichissez la page cliquant simultanément sur les touches Ctrl + Shift + R.
+                                            </p>
+
+                                        </li>
+                                        </ul>
+                                    </li>
+                                    <li>Je ne sais pas
+                                        <ul><li>
+                                            <p>
+                                                <b>Solution</b>
+                                            </p>
+                                            <p>
+                                                Pour mettre le zoom à 100% cliquez simultanément sur Ctrl + 0, ou cliquez dans votre barre de recherche sur le zoom et cliquez sur réinitialiser. Enfin rafraichissez la page cliquant simultanément sur les touches Ctrl + Shift + R.
+                                            </p>
+
+                                        </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            </ul>
+                        </li>
+                            <li>Non
+                                <ul><li>
+                                    <p>
+                                        <b>Solution</b>
+                                    </p>
+                                    <p>
+                                        Mettez à jour votre navigateur. Pour mettre à jour votre navigateur :
+                                    </p>
+                                    <ol>
+                                        <li>
+                                            Cliquez sur les trois points verticaux en haut en droite.
+                                        </li>
+                                        <li>
+                                            Puis sure Aide &gt; A propose de Google de Chrome.
+                                        </li>
+                                        <li>
+                                            Puis cliquez sur Mettre à jour.
+                                        </li>
+                                    </ol>
+                                    <p>
+                                        Enfin fermez et redémarrez votre navigateur.
+                                    </p>
+
+                                </li>
+                                </ul>
+                            </li>
+                            <li>Je ne sais pas
+                                <ul><li>
+                                    <p>
+                                        <b>Solution</b>
+                                    </p>
+                                    <p>
+                                        Mettez à jour votre navigateur. Pour mettre à jour votre navigateur :
+                                    </p>
+                                    <ol>
+                                        <li>
+                                            Cliquez sur les trois points verticaux en haut en droite.
+                                        </li>
+                                        <li>
+                                            Puis sure Aide &gt; A propose de Google de Chrome.
+                                        </li>
+                                        <li>
+                                            Puis cliquez sur Mettre à jour.
+                                        </li>
+                                    </ol>
+                                    <p>
+                                        Enfin fermez et redémarrez votre navigateur.
+                                    </p>
+
+                                </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    </ul>
+                </li>
+                    <li>Non
+                        <ul><li>
+                            <p>
+                                <b>Solution</b>
+                            </p>
+                            <p>
+                                Installez google Chrome : <a href="https://www.google.fr/chrome" target="_blank">https://www.google.fr/chrome</a>
+                            </p>
+
+                        </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+
+            </ul>
+        </li>
+            <li>Je souhaites me former
+                <ul><li>Quel type d'utilisateur êtes-vous?
+                    <ul><li>Première utilisation
+                        <ul><li>Quel sujet voulez-vous aborder?
+                            <ul><li>Pourquoi Product-Live?
+
+                            </li>
+                                <li>Référencer des produits chez un distributeur
+
+                                </li>
+                                <li>Collecter des produits de mes fournisseurs
+
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        </ul>
+                    </li>
+                        <li>Utilisateur
+                            <ul><li>Quel sujet voulez-vous aborder?
+                                <ul><li>Créer des produits
+
+                                </li>
+                                    <li>Classer des produits
+                                        <ul><li>
+                                            <p>
+                                                <b>Tutoriel </b>
+                                            </p>
+                                            <p>
+                                                Pour classer vos produits vous pouvez sélectionner un ou plusieurs
+                                                produits.
+                                            </p>
+                                            <p>
+                                                Vous pouvez sélectionner plusieurs produits d'affiler en utilisant la
+                                                touche SHIFT + clique de souris, ou en utilisant CTRL + clique de
+                                                souris, comme pour sélectionner des fichiers sur votre ordinateur.
+                                            </p>
+                                            <p>
+                                                <img src="Gifs/classer.gif" width="100%">
+
+                                            </p>
+
+                                        </li>
+                                        </ul>
+                                    </li>
+                                    <li>Compléter les attributs
+
+                                    </li>
+                                    <li>Compléter les images
+
+                                    </li>
+                                    <li>Filtrer les produits
+
+                                    </li>
+                                    <li>Publier des produits
+
+                                    </li>
+                                    <li>Enregistrer des recherches
+
+                                    </li>
+                                    <li>Enregistrer des todo listes
+
+                                    </li>
+                                    <li>Personnaliser mon tableau de bord
+
+                                    </li>
+                                    <li>Autre demandes
+                                        <ul><li>
+                                            <p>
+                                                <b>Solution</b>
+                                            </p>
+                                            <p>
+                                                Contactez votre administrateur
+                                            </p>
+
+                                        </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            </ul>
+                        </li>
+                        <li>Administrateur
+                            <ul><li>Quel sujet voulez-vous aborder?
+                                <ul><li>Gestion des utilisateur
+
+                                </li>
+                                    <li>Gestion de vos systèmes
+
+                                    </li>
+                                    <li>Exporter des données
+                                        <ul><li>Est-ce que cet export servira pour un usage interne ou externe?
+                                            <ul><li><span style="font-family: SansSerif, sans-serif; ">Usage interne</span>
+                                                <ul><li>Quel sera l'usage parmi les possibilités suivantes?
+                                                    <ul><li>Le fichier servira à&nbsp;alimenter un système de l'entreprise
+
+                                                    </li>
+                                                        <li>Le fichier servira pour certains utilisateurs de l’entreprise
+
+                                                        </li>
+
+                                                    </ul>
+                                                </li>
+
+                                                </ul>
+                                            </li>
+                                                <li>Usage externe
+
+                                                </li>
+
+                                            </ul>
+                                        </li>
+
+                                        </ul>
+                                    </li>
+                                    <li>Importer des données
+
+                                    </li>
+                                    <li>Créer des flux de travaux
+
+                                    </li>
+                                    <li>En savoir plus sur le menu d'administration
+                                        <ul><li>Quel partie souhaitez-vous aborder?
+                                            <ul><li>Identifiants
+
+                                            </li>
+                                                <li>Mes systèmes
+
+                                                </li>
+                                                <li>Mes distributeurs
+
+                                                </li>
+                                                <li>Mes contacts
+
+                                                </li>
+                                                <li>Entreprise
+
+                                                </li>
+
+                                            </ul>
+                                        </li>
+
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+
+                </ul>
+            </li>
+            <li>Je souhaites en savoir plus sur Product-Live
+                <ul><li>Que souhaitez-vous savoir?
+
+                </li>
+
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <script>
+        jQuery.fn.getPath = function () {
+            if (this.length != 1) throw 'Requires one element.';
+
+            var path, node = this;
+            while (node.length) {
+                var realNode = node[0], name = realNode.localName;
+                if (!name) break;
+                name = name.toLowerCase();
+
+                var parent = node.parent();
+
+                var siblings = parent.children(name);
+                if (siblings.length > 1) {
+                    name += ':eq(' + siblings.index(realNode) + ')';
+                }
+
+                path = name + (path ? '>' + path : '');
+                node = parent;
+            }
+
+            return path;
+        };
+
+        function init() {
+            $('#chat > ul:nth-child(1)').find('li').each(function (index) {
+                $(this).hide();
+            });
+
+            $('#chat').find('> ul:nth-child(1) > li').show().addClass('user-question');
+
+            $('#chat').show();
+        }
+
+        $( document ).ready(function() {
+            var hash = window.location.hash;
+            if (hash) {
+                init();
+                hash += 'p=';
+            } else {
+                init();
+                hash += 'p=';
+            }
+
+            var path = '> ul:nth-child(1)';
+
+            $('#chat').on('click', '.user-question', function(event) {
+                var position = $(this).index() + 1;
+                if(hash == 'p=') { hash += position; } else { hash += ';' + position; }
+                window.location.hash = hash;
+
+                $('#chat').find(path).find('> li:nth-child(' + position + ')').removeClass('user-question').addClass('user-response');
+                $('#chat').find(path).find('li.user-question').hide();
+                $('#chat').find(path).find('li.go-back').hide();
+                path += '> li:nth-child(' + position + ') > ul:nth-child(1)';
+                // Next node
+                var is_solution = $('#chat').find(path).find('> li:nth-child(1)').text().trim().startsWith('Solution');
+                var is_bug = $('#chat').find(path).find('> li:nth-child(1)').text().trim().startsWith('Bug');
+                var is_tutorial = $('#chat').find(path).find('> li:nth-child(1)').text().trim().startsWith('Tutoriel');
+                if(is_solution) {
+                    // Display solution
+                    $('#chat').find(path).find('> li:nth-child(1) > p').addClass('answer');
+                    $('#chat').find(path).find('> li:nth-child(1)').find('li').addClass('answer').show();
+                    $('#chat').find(path).find('> li:nth-child(1) > p:nth-child(1)').removeClass('answer').addClass('solution');
+                    $('#chat').find(path).find('> li:nth-child(1)').show();
+                } else if (is_bug) {
+                    // Display bug
+                    $('#chat').find(path).find('> li:nth-child(1) > p:nth-child(1)').addClass('bug');
+                    $('#chat').find(path).find('> li:nth-child(1) > p:nth-child(2)').addClass('answer');
+                    $('#chat').find(path).find('> li:nth-child(1)').show();
+                } else if (is_tutorial) {
+                    // Display Tutorial
+                    $('#chat').find(path).find('> li:nth-child(1) > p').addClass('answer');
+                    $('#chat').find(path).find('> li:nth-child(1)').find('li').addClass('answer').show();
+                    $('#chat').find(path).find('> li:nth-child(1) > p:nth-child(1)').removeClass('answer').addClass('solution');
+                    $('#chat').find(path).find('> li:nth-child(1)').show();
+                } else {
+                    // Display next question
+                    $('#chat').find(path).find('> li:nth-child(1)').show().addClass('chatbot');
+                    $('#chat').find(path).find('> li:nth-child(1) > ul:nth-child(1) > li').show().addClass('user-question');
+                    path += '> li:nth-child(1) > ul:nth-child(1)';
+                }
+            });
+            $('#chat').on('click', '.go-back', function(event) {
+
+            });
+        });
+    </script>
+</body>
+</html>
