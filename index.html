@@ -36,77 +36,52 @@
             padding: 10px;
             text-align: right;
         }
-        #tutorials {
+        #main  {           
             padding-top: 70px;
         }
-        #tutorials ul {
-            padding: 0;
-            list-style-type: none;
-            margin-bottom: 0;
-        }
-        #tutorials li {
-            font-weight: normal;
-            cursor: pointer;
-            color: #337ab7;
-        }
-        #tutorials li:hover {
-            font-weight: normal;
-            cursor: pointer;
-            text-decoration: underline;
-            color: #337ab7;
+        #learn { 
+            display: none;
         }
         #learn ul {
             padding: 0;
             list-style-type: none;
             margin-bottom: 0;
         }
-        #learn li {
-            font-weight: normal;
-            cursor: pointer;
-            color: #337ab7;
-        }
-        #learn li:hover {
-            font-weight: normal;
-            cursor: pointer;
-            text-decoration: underline;
-            color: #337ab7;
-        }
-        #chat {
+
+        #help {
             display: none;
         }
-        #chat ul {
+        #help ul {
             padding: 0;
             list-style-type: none;
             margin-bottom: 0;
         }
-        #chat .chatbot {
+        .chatbot {
             font-weight: bold;
-            padding-top: 15px;
+            padding-top: 15px ;
         }
-        #chat .user-question {
+        .user-question {
             font-weight: normal;
             cursor: pointer;
             color: #337ab7;
         }
-        #chat .user-question:hover {
+        .user-question:hover {
             text-decoration: underline;
             color: #337ab7;
         }
-        #chat .user-response {
+        .user-response {
             font-weight: normal;
             cursor: pointer;
         }
-        #chat .solution {
+        .solution {
             padding-top: 15px;
             color: #1bc98e;
         }
-        #chat .bug {
+        .bug {
             padding-top: 15px;
             color: #e64759;
         }
-        #chat .answer {
-        }
-        #chat p {
+        p {
             margin-bottom: 0;
         }
     </style>
@@ -116,7 +91,7 @@
     <div id="reload">
         <button id="reload-btn" type="button" class="btn btn-default btn-sm">Revenir à l'accueil</button>
     </div>
-    <div id="tutorials">
+    <!-- <div id="tutorials">
         <h2>Créer des produits</h2>
         <ul>
             <li>Créer des produits directement dans l'interface (1 à 30 produits | 3 minutes)</li>
@@ -124,402 +99,85 @@
             <li>Importer des produits dans mon format (1 à 30 produits | 3 minutes)</li>
         </ul>
         <br>
-    </div>
-    <div id="learn">
-        <h2>Se former</h2>
-        <ul>
-            <li>Classer des produits</li>
-            <li>Compléter des attributs</li>
-            <li>Ajouter des images</li>
-            <li>Publier des produits</li>
-            <li>Supprimer des produits</li>
-        </ul>
-        <br>
-    </div>
-    <div class="help">
-        <h2>Aide</h2>
-    </div>
-    <div id="chat">
-        <ul><li>J'ai un problème
-            <ul><li>Est-ce que vous utilisez Google Chrome comme navigateur?
-                <ul><li>Oui
-                    <ul><li>Est-ce que votre navigateur est à&nbsp;jour?
-                        <ul><li>Oui
-                            <ul><li>Est-ce que le zoom d'affichage du navigateur est à&nbsp;100%?
-                                <ul><li>Oui
-                                    <ul><li>Est-ce que tous les utilisateurs rencontrent le même problème?
-                                        <ul><li>Oui
-                                            <ul><li>Quel type de problème rencontrez-vous?
-                                                <ul><li>Problème de connexion
-
-                                                </li>
-                                                    <li>Problème d'invitation
-
-                                                    </li>
-                                                    <li>Problème d'affichage
-
-                                                    </li>
-                                                    <li>Problème d'export
-                                                        <ul><li>Quel est le problème avec l'export?
-                                                            <ul><li>L'export est toujours en cours
-                                                                <ul><li>Est-ce que d'autres utilisateurs ont également lancé des exports?
-                                                                    <ul><li>Oui
-
-                                                                    </li>
-                                                                        <li>Non
-
-                                                                        </li>
-                                                                        <li>Je ne sais pas
-
-                                                                        </li>
-
-                                                                    </ul>
-                                                                </li>
-
-                                                                </ul>
-                                                            </li>
-                                                                <li>L'export est terminé en erreur
-
-                                                                </li>
-                                                                <li>L'export est terminé, mais le fichier qui est généré ne correspond pas à&nbsp;ce qui est attendu
-
-                                                                </li>
-
-                                                            </ul>
-                                                        </li>
-
-                                                        </ul>
-                                                    </li>
-                                                    <li>Problème sur mes données
-
-                                                    </li>
-
-                                                </ul>
-                                            </li>
-
+    </div> -->
+    <div id="main">
+        <div id="learn">
+            <h2>Se former</h2>
+            <ul>
+                <li>Créer des produits
+                    <ul>
+                        <li>Quel méthode souhaitez-vous utiliser?
+                            <ul>
+                                <li>Je veux créer des produits directement dans l'inteface</li>
+                                <li>Je veux télécharger un template et travailler sur Excel</li>
+                                <li>J'ai un fichier dans mon format que je souhaites importer</li>
+                                <li>Je ne sais pas répondre, aidez-moi à chosir
+                                    <ul>
+                                        <li>Combien de produits souhaitez-vous créer?
+                                            <ul>
+                                                <li>1 produit pour tester</li>
+                                                <li>De 1 à 300 produits</li>
+                                                <li>De 30 à 50 produits</li>
+                                                <li>Plus de 500 produits</li>
                                             </ul>
                                         </li>
-                                            <li>Non
-                                                <ul><li>Est-ce que vous êtes sur le même réseau que vos collaborateurs?
-                                                    <ul><li>Oui
-                                                        <ul><li><a href="#ID_1442874269" target="_blank"><span class="l">~</span>&nbsp;&nbsp;
-                                                        </a>
-
-                                                        </li>
-
-                                                        </ul>
-                                                    </li>
-                                                        <li>Non
-                                                            <ul><li>
-                                                                <p>
-                                                                    <b>Solution</b>
-                                                                </p>
-                                                                <p>
-                                                                    Le problème est très certainement lié à votre poste de travail. Demandez à votre administrateur réseau de vous configurer le même accès au réseau que pour les utilisateurs qui arrivent à se connecter. Product-Live ne pourra pas vous aider si vous n'êtes pas sur le même réseau.
-                                                                </p>
-
-                                                            </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>Je ne sais pas
-                                                            <ul><li>
-                                                                <p>
-                                                                    <b>Solution</b>
-                                                                </p>
-                                                                <p>
-                                                                    Le problème est très certainement lié à votre poste de travail. Demandez à votre administrateur réseau de vous configurer le même accès au réseau que pour les utilisateurs qui arrivent à se connecter. Product-Live ne pourra pas vous aider si vous n'êtes pas sur le même réseau.
-                                                                </p>
-
-                                                            </li>
-                                                            </ul>
-                                                        </li>
-
-                                                    </ul>
-                                                </li>
-
-                                                </ul>
-                                            </li>
-
-                                        </ul>
-                                    </li>
-
                                     </ul>
                                 </li>
-                                    <li>Non
-                                        <ul><li>
-                                            <p>
-                                                <b>Solution</b>
-                                            </p>
-                                            <p>
-                                                Pour mettre le zoom à 100% cliquez simultanément sur Ctrl + 0, ou cliquez dans votre barre de recherche sur le zoom et cliquez sur réinitialiser. Enfin rafraichissez la page cliquant simultanément sur les touches Ctrl + Shift + R.
-                                            </p>
-
-                                        </li>
-                                        </ul>
-                                    </li>
-                                    <li>Je ne sais pas
-                                        <ul><li>
-                                            <p>
-                                                <b>Solution</b>
-                                            </p>
-                                            <p>
-                                                Pour mettre le zoom à 100% cliquez simultanément sur Ctrl + 0, ou cliquez dans votre barre de recherche sur le zoom et cliquez sur réinitialiser. Enfin rafraichissez la page cliquant simultanément sur les touches Ctrl + Shift + R.
-                                            </p>
-
-                                        </li>
-                                        </ul>
-                                    </li>
-
-                                </ul>
-                            </li>
-
                             </ul>
                         </li>
-                            <li>Non
-                                <ul><li>
-                                    <p>
-                                        <b>Solution</b>
-                                    </p>
-                                    <p>
-                                        Mettez à jour votre navigateur. Pour mettre à jour votre navigateur :
-                                    </p>
-                                    <ol>
-                                        <li>
-                                            Cliquez sur les trois points verticaux en haut en droite.
-                                        </li>
-                                        <li>
-                                            Puis sure Aide &gt; A propose de Google de Chrome.
-                                        </li>
-                                        <li>
-                                            Puis cliquez sur Mettre à jour.
-                                        </li>
-                                    </ol>
-                                    <p>
-                                        Enfin fermez et redémarrez votre navigateur.
-                                    </p>
-
-                                </li>
-                                </ul>
-                            </li>
-                            <li>Je ne sais pas
-                                <ul><li>
-                                    <p>
-                                        <b>Solution</b>
-                                    </p>
-                                    <p>
-                                        Mettez à jour votre navigateur. Pour mettre à jour votre navigateur :
-                                    </p>
-                                    <ol>
-                                        <li>
-                                            Cliquez sur les trois points verticaux en haut en droite.
-                                        </li>
-                                        <li>
-                                            Puis sure Aide &gt; A propose de Google de Chrome.
-                                        </li>
-                                        <li>
-                                            Puis cliquez sur Mettre à jour.
-                                        </li>
-                                    </ol>
-                                    <p>
-                                        Enfin fermez et redémarrez votre navigateur.
-                                    </p>
-
-                                </li>
-                                </ul>
-                            </li>
-
-                        </ul>
-                    </li>
-
                     </ul>
                 </li>
-                    <li>Non
-                        <ul><li>
-                            <p>
-                                <b>Solution</b>
-                            </p>
-                            <p>
-                                Installez google Chrome : <a href="https://www.google.fr/chrome" target="_blank">https://www.google.fr/chrome</a>
-                            </p>
+                <li>Classer des produits
+                    <ul>
+                        <li>
+                                <p><b>Tutoriel</b></p>
+                                <p>Pour classer vos produits cliquez dans le menu centrale sur le bouton</p>
+                                <br>
+                                <img src="images/classification.jpg" alt="">
+                                <br>
+                                <br>
+                                <p>Vous pouvez sélectionner et classer des produits comme vous le faites quand vous déplacez des fichiers sur votre ordinateur.</p>
+                                <img src="images/classer.gif" alt="">
+                                <p>Vous pouvez sélectionner plusieurs produits d'affiler en utilisant la touche SHIFT + clique de souris, ou en utilisant CTRL + clique de souris, comme pour sélectionner des fichiers sur votre ordinateur.</p>
 
                         </li>
-                        </ul>
-                    </li>
-
-                </ul>
-            </li>
-
+                    </ul>
+                </li>
+                <li>Compléter des attributs</li>
+                <li>Ajouter des images</li>
+                <li>Publier des produits</li>
+                <li>Supprimer des produits</li>
             </ul>
-        </li>
-            <li>Je souhaites me former
-                <ul><li>Quel type d'utilisateur êtes-vous?
-                    <ul><li>Première utilisation
-                        <ul><li>Quel sujet voulez-vous aborder?
-                            <ul><li>Pourquoi Product-Live?
-
-                            </li>
-                                <li>Référencer des produits chez un distributeur
-
-                                </li>
-                                <li>Collecter des produits de mes fournisseurs
-
-                                </li>
-
-                            </ul>
-                        </li>
-
-                        </ul>
-                    </li>
-                        <li>Utilisateur
-                            <ul><li>Quel sujet voulez-vous aborder?
-                                <ul><li>Créer des produits
-
-                                </li>
-                                    <li>Classer des produits
-                                        <ul><li>
-                                            <p>
-                                                <b>Tutoriel </b>
-                                            </p>
-                                            <p>
-                                                Pour classer vos produits vous pouvez sélectionner un ou plusieurs
-                                                produits.
-                                            </p>
-                                            <p>
-                                                Vous pouvez sélectionner plusieurs produits d'affiler en utilisant la
-                                                touche SHIFT + clique de souris, ou en utilisant CTRL + clique de
-                                                souris, comme pour sélectionner des fichiers sur votre ordinateur.
-                                            </p>
-                                            <p>
-                                                <img src="images/classer.gif" width="100%">
-
-                                            </p>
-
-                                        </li>
-                                        </ul>
-                                    </li>
-                                    <li>Compléter les attributs
-
-                                    </li>
-                                    <li>Compléter les images
-
-                                    </li>
-                                    <li>Filtrer les produits
-
-                                    </li>
-                                    <li>Publier des produits
-
-                                    </li>
-                                    <li>Enregistrer des recherches
-
-                                    </li>
-                                    <li>Enregistrer des todo listes
-
-                                    </li>
-                                    <li>Personnaliser mon tableau de bord
-
-                                    </li>
-                                    <li>Autre demandes
-                                        <ul><li>
-                                            <p>
-                                                <b>Solution</b>
-                                            </p>
-                                            <p>
-                                                Contactez votre administrateur
-                                            </p>
-
-                                        </li>
-                                        </ul>
-                                    </li>
-
-                                </ul>
-                            </li>
-
-                            </ul>
-                        </li>
-                        <li>Administrateur
-                            <ul><li>Quel sujet voulez-vous aborder?
-                                <ul><li>Gestion des utilisateur
-
-                                </li>
-                                    <li>Gestion de vos systèmes
-
-                                    </li>
-                                    <li>Exporter des données
-                                        <ul><li>Est-ce que cet export servira pour un usage interne ou externe?
-                                            <ul><li><span style="font-family: SansSerif, sans-serif; ">Usage interne</span>
-                                                <ul><li>Quel sera l'usage parmi les possibilités suivantes?
-                                                    <ul><li>Le fichier servira à&nbsp;alimenter un système de l'entreprise
-
-                                                    </li>
-                                                        <li>Le fichier servira pour certains utilisateurs de l’entreprise
-
-                                                        </li>
-
-                                                    </ul>
-                                                </li>
-
-                                                </ul>
-                                            </li>
-                                                <li>Usage externe
-
-                                                </li>
-
+            <br>
+        </div>
+        <div id="help">
+            <h2>Aide</h2>
+            <ul>
+                <li>J'ai un problème
+                    <ul>
+                        <li>Est-ce que vous utiliser Google Chrome comme navigateur?
+                            <ul>
+                                <li>Oui
+                                    <ul>
+                                        <li>Est-ce que votre navigateur est à jour?
+                                            <ul>
+                                                <li>Oui</li>
+                                                <li>Non</li>
+                                                <li>Je ne sais pas</li>
                                             </ul>
                                         </li>
-
-                                        </ul>
-                                    </li>
-                                    <li>Importer des données
-
-                                    </li>
-                                    <li>Créer des flux de travaux
-
-                                    </li>
-                                    <li>En savoir plus sur le menu d'administration
-                                        <ul><li>Quel partie souhaitez-vous aborder?
-                                            <ul><li>Identifiants
-
-                                            </li>
-                                                <li>Mes systèmes
-
-                                                </li>
-                                                <li>Mes distributeurs
-
-                                                </li>
-                                                <li>Mes contacts
-
-                                                </li>
-                                                <li>Entreprise
-
-                                                </li>
-
-                                            </ul>
-                                        </li>
-
-                                        </ul>
-                                    </li>
-
-                                </ul>
-                            </li>
-
+                                    </ul>
+                                </li>
+                                <li>Non</li>
                             </ul>
                         </li>
-
                     </ul>
                 </li>
-
-                </ul>
-            </li>
-            <li>Je souhaites en savoir plus sur Product-Live
-                <ul><li>Que souhaitez-vous savoir?
-
-                </li>
-
-                </ul>
-            </li>
-
-        </ul>
+            </ul>
+        </div>
     </div>
+    
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -552,70 +210,81 @@
         };
 
         function init() {
-            $('#chat > ul:nth-child(1)').find('li').each(function (index) {
-                $(this).hide();
+            var blocs = ["learn", "help"];
+            blocs.forEach(element => {
+                // Add class
+                $('#'+element+' > ul').find('li').each(function (index) {
+                    $(this).hide();
+                });
+                $('#'+element).find('> ul > li').show().addClass('user-question');
+                $('#'+element).show();
+
+                // Add events
+                var path = '> ul';
+                $('#'+element).on('click', '.user-question', {name: element}, function(event) {
+                    var element_name = event.data.name;
+                    if (path == '> ul') {
+                        if (element_name == 'learn') {
+                            $('#help').hide();
+                        } else {
+                            $('#learn').hide();
+                        }
+                    }
+                    var position = $(this).index() + 1;
+                    // if(hash == 'p=') { hash += position; } else { hash += ';' + position; }
+                    // window.location.hash = hash;
+                    console.log('#'+element_name+path+'> li:nth-child(' + position + ')')
+
+                    $('#'+element_name).find(path).find('> li:nth-child(' + position + ')').removeClass('user-question').addClass('user-response');
+                    $('#'+element_name).find(path).find('li.user-question').hide();
+                    path += '> li:nth-child(' + position + ') > ul';
+                    // Next node
+                    var is_solution = $('#'+element_name).find(path).find('> li:nth-child(1)').text().trim().startsWith('Solution');
+                    var is_bug = $('#'+element_name).find(path).find('> li:nth-child(1)').text().trim().startsWith('Bug');
+                    var is_tutorial = $('#'+element_name).find(path).find('> li:nth-child(1)').text().trim().startsWith('Tutoriel');
+                    if(is_solution) {
+                        // Display solution
+                        $('#'+element_name).find(path).find('> li:nth-child(1) > p').addClass('answer');
+                        $('#'+element_name).find(path).find('> li:nth-child(1)').find('li').addClass('answer').show();
+                        $('#'+element_name).find(path).find('> li:nth-child(1) > p:nth-child(1)').removeClass('answer').addClass('solution');
+                        $('#'+element_name).find(path).find('> li:nth-child(1)').show();
+                    } else if (is_bug) {
+                        // Display bug
+                        $('#'+element_name).find(path).find('> li:nth-child(1) > p:nth-child(1)').addClass('bug');
+                        $('#'+element_name).find(path).find('> li:nth-child(1) > p:nth-child(2)').addClass('answer');
+                        $('#'+element_name).find(path).find('> li:nth-child(1)').show();
+                    } else if (is_tutorial) {
+                        // Display Tutorial
+                        $('#'+element_name).find(path).find('> li:nth-child(1) > p').addClass('answer');
+                        $('#'+element_name).find(path).find('> li:nth-child(1)').find('li').addClass('answer').show();
+                        $('#'+element_name).find(path).find('> li:nth-child(1) > p:nth-child(1)').removeClass('answer').addClass('solution');
+                        $('#'+element_name).find(path).find('> li:nth-child(1)').show();
+                    } else {
+                        // Display next question
+                        $('#'+element_name).find(path).find('> li:nth-child(1)').show().addClass('chatbot');
+                        $('#'+element_name).find(path).find('> li:nth-child(1) > ul:nth-child(1) > li').show().addClass('user-question');
+                        path += '> li:nth-child(1) > ul';
+                    }
+                });
             });
-
-            $('#chat').find('> ul:nth-child(1) > li').show().addClass('user-question');
-
-            $('#chat').show();
+            
         }
 
         $( document ).ready(function() {
             $('#reload-btn').on('click', function(e) {
                 location.reload();
             });
-            var hash = window.location.hash;
-            if (hash) {
-                init();
-                hash += 'p=';
-            } else {
-                init();
-                hash += 'p=';
-            }
+            init();
+            // var hash = window.location.hash;
+            // if (hash) {
+            //     init();
+            //     hash += 'p=';
+            // } else {
+            //     init();
+            //     hash += 'p=';
+            // }
 
-            var path = '> ul:nth-child(1)';
-
-            $('#chat').on('click', '.user-question', function(event) {
-                var position = $(this).index() + 1;
-                if(hash == 'p=') { hash += position; } else { hash += ';' + position; }
-                window.location.hash = hash;
-
-                $('#chat').find(path).find('> li:nth-child(' + position + ')').removeClass('user-question').addClass('user-response');
-                $('#chat').find(path).find('li.user-question').hide();
-                $('#chat').find(path).find('li.go-back').hide();
-                path += '> li:nth-child(' + position + ') > ul:nth-child(1)';
-                // Next node
-                var is_solution = $('#chat').find(path).find('> li:nth-child(1)').text().trim().startsWith('Solution');
-                var is_bug = $('#chat').find(path).find('> li:nth-child(1)').text().trim().startsWith('Bug');
-                var is_tutorial = $('#chat').find(path).find('> li:nth-child(1)').text().trim().startsWith('Tutoriel');
-                if(is_solution) {
-                    // Display solution
-                    $('#chat').find(path).find('> li:nth-child(1) > p').addClass('answer');
-                    $('#chat').find(path).find('> li:nth-child(1)').find('li').addClass('answer').show();
-                    $('#chat').find(path).find('> li:nth-child(1) > p:nth-child(1)').removeClass('answer').addClass('solution');
-                    $('#chat').find(path).find('> li:nth-child(1)').show();
-                } else if (is_bug) {
-                    // Display bug
-                    $('#chat').find(path).find('> li:nth-child(1) > p:nth-child(1)').addClass('bug');
-                    $('#chat').find(path).find('> li:nth-child(1) > p:nth-child(2)').addClass('answer');
-                    $('#chat').find(path).find('> li:nth-child(1)').show();
-                } else if (is_tutorial) {
-                    // Display Tutorial
-                    $('#chat').find(path).find('> li:nth-child(1) > p').addClass('answer');
-                    $('#chat').find(path).find('> li:nth-child(1)').find('li').addClass('answer').show();
-                    $('#chat').find(path).find('> li:nth-child(1) > p:nth-child(1)').removeClass('answer').addClass('solution');
-                    $('#chat').find(path).find('> li:nth-child(1)').show();
-                } else {
-                    // Display next question
-                    $('#chat').find(path).find('> li:nth-child(1)').show().addClass('chatbot');
-                    $('#chat').find(path).find('> li:nth-child(1) > ul:nth-child(1) > li').show().addClass('user-question');
-                    path += '> li:nth-child(1) > ul:nth-child(1)';
-                }
-            });
-            $('#chat').on('click', '.go-back', function(event) {
-
-            });
+            
         });
     </script>
 </body>
