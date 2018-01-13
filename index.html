@@ -9,20 +9,35 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,‌​100italic,300,300ita‌​lic,400italic,500,50‌​0italic,700,700itali‌​c,900italic,900' rel='stylesheet' type='text/css'>
     <!-- Style -->
     <style>
         body {
-            color: #212121;
+            color: #676a6c !important;
             font-size: 15px;
             font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
-            line-height: 21.4286px
+            line-height: 21.4286px;
+        }
+        .btn {
+            cursor: pointer;
         }
         h2 {
+            color: #676a6c;
             font-size: 24px;
-            font-weight: 100;
+            font-weight: 200;
             margin-top: 5px;
-            margin-bottom: 10px;
-            color: #333;
+            margin-bottom: 10px;         
+        }
+        #reload {
+            position: absolute;
+            background: white;
+            border-bottom: 1px solid #d1d1d1;
+            width: 100%;
+            padding: 10px;
+            text-align: right;
+        }
+        #tutorials {
+            padding-top: 70px;
         }
         #tutorials ul {
             padding: 0;
@@ -32,11 +47,29 @@
         #tutorials li {
             font-weight: normal;
             cursor: pointer;
+            color: #337ab7;
         }
         #tutorials li:hover {
             font-weight: normal;
             cursor: pointer;
             text-decoration: underline;
+            color: #337ab7;
+        }
+        #learn ul {
+            padding: 0;
+            list-style-type: none;
+            margin-bottom: 0;
+        }
+        #learn li {
+            font-weight: normal;
+            cursor: pointer;
+            color: #337ab7;
+        }
+        #learn li:hover {
+            font-weight: normal;
+            cursor: pointer;
+            text-decoration: underline;
+            color: #337ab7;
         }
         #chat {
             display: none;
@@ -49,20 +82,18 @@
         #chat .chatbot {
             font-weight: bold;
             padding-top: 15px;
-            /*color: #cfd2da;*/
         }
         #chat .user-question {
             font-weight: normal;
             cursor: pointer;
-            /*color: #1997c6;*/
+            color: #337ab7;
         }
         #chat .user-question:hover {
-            /*color: white;*/
             text-decoration: underline;
+            color: #337ab7;
         }
         #chat .user-response {
             font-weight: normal;
-            /*color: #1997c6;*/
             cursor: pointer;
         }
         #chat .solution {
@@ -74,7 +105,6 @@
             color: #e64759;
         }
         #chat .answer {
-            /*color: #cfd2da;*/
         }
         #chat p {
             margin-bottom: 0;
@@ -83,16 +113,28 @@
 
 </head>
 <body>
+    <div id="reload">
+        <button type="button" class="btn btn-default btn-sm">Small button</button>
+    </div>
     <div id="tutorials">
-        <h2>Tutoriaux</h2>
+        <h2>Créer des produits</h2>
         <ul>
-            <li>Créer des produits directement dans l'interface</li>
-            <li>Télécharger un template Excel pour travailler sur Excel</li>
-            <li>Importer des produits dans mon format</li>
+            <li>Créer des produits directement dans l'interface (1 à 30 produits | 3 minutes)</li>
+            <li>Télécharger un template Excel pour travailler sur Excel (1 à 500 produits | 10 minutes)</li>
+            <li>Importer des produits dans mon format (1 à 30 produits | 3 minutes)</li>
         </ul>
+        <br>
     </div>
     <div id="learn">
         <h2>Se former</h2>
+        <ul>
+            <li>Classer des produits</li>
+            <li>Compléter des attributs</li>
+            <li>Ajouter des images</li>
+            <li>Publier des produits</li>
+            <li>Supprimer des produits</li>
+        </ul>
+        <br>
     </div>
     <div class="help">
         <h2>Aide</h2>
