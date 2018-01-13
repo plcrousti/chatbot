@@ -76,6 +76,7 @@
         .solution {
             padding-top: 15px;
             color: #1bc98e;
+            display: none;
         }
         .bug {
             padding-top: 15px;
@@ -234,14 +235,20 @@
                 var path = '> ul';
                 $('#'+element).on('click', '.user-question', {name: element}, function(event) {
                     var element_name = event.data.name;
+                    var position = $(this).index() + 1;
                     if (path == '> ul') {
                         if (element_name == 'learn') {
                             $('#help').hide();
+                            var title = $('#learn > ul > li:nth-child('+position+')').clone().children().remove().end().text().trim();
+                            $('#learn > h2').html(title);
+                            $('#learn > ul > li:nth-child('+position+')').html($('#learn > ul > li:nth-child('+position+')').html().replace(title, ''));
                         } else {
                             $('#learn').hide();
+                            var title = $('#help > ul > li:nth-child('+position+')').clone().children().remove().end().text().trim();
+                            $('#help > h2').html(title);
+                            $('#help > ul > li:nth-child('+position+')').html($('#help > ul > li:nth-child('+position+')').html().replace(title, ''));
                         }
                     }
-                    var position = $(this).index() + 1;
                     // if(hash == 'p=') { hash += position; } else { hash += ';' + position; }
                     // window.location.hash = hash;
                     console.log('#'+element_name+path+'> li:nth-child(' + position + ')')
