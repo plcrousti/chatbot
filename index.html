@@ -13,10 +13,32 @@
     <style>
         body {
             color: #212121;
-            font-size: 18px;
+            font-size: 15px;
+            font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+            line-height: 21.4286px
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: 100;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        #tutorials ul {
+            padding: 0;
+            list-style-type: none;
+            margin-bottom: 0;
+        }
+        #tutorials li {
+            font-weight: normal;
+            cursor: pointer;
+        }
+        #tutorials li:hover {
+            font-weight: normal;
+            cursor: pointer;
+            text-decoration: underline;
         }
         #chat {
-            padding: 20px;
             display: none;
         }
         #chat ul {
@@ -61,6 +83,20 @@
 
 </head>
 <body>
+    <div id="tutorials">
+        <h2>Tutoriaux</h2>
+        <ul>
+            <li>Créer des produits directement dans l'interface</li>
+            <li>Télécharger un template Excel pour travailler sur Excel</li>
+            <li>Importer des produits dans mon format</li>
+        </ul>
+    </div>
+    <div id="learn">
+        <h2>Se former</h2>
+    </div>
+    <div class="help">
+        <h2>Aide</h2>
+    </div>
     <div id="chat">
         <ul><li>J'ai un problème
             <ul><li>Est-ce que vous utilisez Google Chrome comme navigateur?
