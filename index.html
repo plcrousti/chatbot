@@ -114,7 +114,7 @@
 </head>
 <body>
     <div id="reload">
-        <button type="button" class="btn btn-default btn-sm">Revenir à l'accueil</button>
+        <button id="reload-btn" type="button" class="btn btn-default btn-sm">Revenir à l'accueil</button>
     </div>
     <div id="tutorials">
         <h2>Créer des produits</h2>
@@ -562,6 +562,9 @@
         }
 
         $( document ).ready(function() {
+            $('#reload-btn').on('click', function(e) {
+                location.reload();
+            });
             var hash = window.location.hash;
             if (hash) {
                 init();
